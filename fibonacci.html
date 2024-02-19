@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci</title>
+</head>
+<body>
+    n:
+    <input type="number" id='n'>
+    <button type="button" onclick="fib()">fibonacci</button>
+    <script>
+        function fib()
+        {
+            var n=parseInt(document.getElementById('n').value);
+            var x=0;
+            var y=1;
+            var nxt=x+y;
+            document.write(x,y);
+            for (i=0;i<=n;i++)
+            {
+                document.write(nxt);
+                x=y;
+                y=nxt;
+                nxt=x+y;
+               
+            }
+        }
+    </script> 
+</body>
+</html>
